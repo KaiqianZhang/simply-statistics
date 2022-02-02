@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Simply Statistics"
 site: workflowr::wflow_site
 output:
   workflowr::wflow_html:
@@ -8,4 +8,8 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Welcome to simply statistics. I use this website for writing down basic statistics we should keep in mind.
+
+
++ [Hypothesis testing](hypothesis_testing.html)
+
