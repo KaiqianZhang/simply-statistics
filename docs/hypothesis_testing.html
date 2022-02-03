@@ -367,7 +367,7 @@ div.tocify {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -376,7 +376,7 @@ div.tocify {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -385,10 +385,10 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2022-02-02
+<strong>Last updated:</strong> 2022-02-03
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>simply-statistics/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -404,12 +404,12 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
@@ -476,16 +476,16 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomKaiqianZhangsimplystatisticstree6c109ee27d6d22c0bcfd8e9b56de2924d849b085targetblank6c109eea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/KaiqianZhang/simply-statistics/tree/6c109ee27d6d22c0bcfd8e9b56de2924d849b085" target="_blank">6c109ee</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomKaiqianZhangsimplystatisticstree0ae14eee362de572a5ac8120c56a5db052e63526targetblank0ae14eea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/KaiqianZhang/simply-statistics/tree/0ae14eee362de572a5ac8120c56a5db052e63526" target="_blank">0ae14ee</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomKaiqianZhangsimplystatisticstree6c109ee27d6d22c0bcfd8e9b56de2924d849b085targetblank6c109eea" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomKaiqianZhangsimplystatisticstree0ae14eee362de572a5ac8120c56a5db052e63526targetblank0ae14eea" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/KaiqianZhang/simply-statistics/tree/6c109ee27d6d22c0bcfd8e9b56de2924d849b085" target="_blank">6c109ee</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/KaiqianZhang/simply-statistics/tree/0ae14eee362de572a5ac8120c56a5db052e63526" target="_blank">0ae14ee</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -493,6 +493,9 @@ Note that you need to be careful to ensure that all relevant files for the analy
 <pre><code>
 Ignored files:
     Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   analysis/hypothesis_testing.Rmd
 
 </code></pre>
 <p>
@@ -533,6 +536,23 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/KaiqianZhang/simply-statistics/0ae14eee362de572a5ac8120c56a5db052e63526/docs/hypothesis_testing.html" target="_blank">0ae14ee</a>
+</td>
+<td>
+Kaiqian Zhang
+</td>
+<td>
+2022-02-02
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
@@ -555,6 +575,35 @@ my first commit for simply statistics.
 </div>
 </div>
 </div>
+<p>Robert F. Engle showed that Wald test, likelihood-ratio test and Lagrange multiplier test are asymptotically equivalent. Although they are asymptotically equivalent, in finite samples, they could disagree enough to lead to different conclusions.</p>
+<div id="students-t-test" class="section level2">
+<h2>Student’s t test</h2>
+</div>
+<div id="wald-test" class="section level2">
+<h2>Wald test</h2>
+<ul>
+<li><p>Has an asymptotic <span class="math inline">\(\chi^2\)</span>-distribution under the null hypothesis.</p></li>
+<li><p>Is used to determine ‘significant’ variables from the set of predictors.</p></li>
+<li><p>Test statistic for assessing D-dimensional <span class="math inline">\(\boldsymbol{\beta}\)</span>:</p></li>
+</ul>
+<p><span class="math display">\[
+W = (\hat{\boldsymbol{\beta}} - \boldsymbol{\beta}_0)^T (\text{Var}(\hat{\boldsymbol{\beta}}))^{-1} (\hat{\boldsymbol{\beta}} - \boldsymbol{\beta}_0) \sim \chi^2_{(D)} \text{ under }H_0,
+\]</span> where <span class="math inline">\(\hat{\boldsymbol{\beta}}\)</span> is the maximum likelihood estimate.</p>
+<ul>
+<li>Test statistic for assessing univariate <span class="math inline">\(\beta\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+W = \frac{(\hat{\beta} - \beta_0)^2}{\text{Var}(\hat{\beta})} \sim \chi^2_{(1)} \text{ under }H_0. 
+\]</span></p>
+</div>
+<div id="chi-squared-test" class="section level2">
+<h2>Chi-squared test</h2>
+</div>
+<div id="anova" class="section level2">
+<h2>ANOVA</h2>
+</div>
+<div id="likelihood-ratio-test" class="section level2">
+<h2>Likelihood-ratio test</h2>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -584,9 +633,10 @@ loaded via a namespace (and not attached):
 [13] utf8_1.2.2       git2r_0.28.0     jquerylib_0.1.4  htmltools_0.5.2 
 [17] ellipsis_0.3.2   rprojroot_2.0.2  yaml_2.2.1       digest_0.6.29   
 [21] tibble_3.1.6     lifecycle_1.0.1  crayon_1.4.2     later_1.3.0     
-[25] vctrs_0.3.8      fs_1.5.0         promises_1.2.0.1 glue_1.5.1      
+[25] vctrs_0.3.8      promises_1.2.0.1 fs_1.5.0         glue_1.5.1      
 [29] evaluate_0.14    rmarkdown_2.11   stringi_1.7.6    compiler_4.1.1  
 [33] pillar_1.6.4     httpuv_1.6.3     pkgconfig_2.0.3 </code></pre>
+</div>
 </div>
 
 

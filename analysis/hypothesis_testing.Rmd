@@ -11,3 +11,44 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+Robert F. Engle showed that Wald test, likelihood-ratio test and Lagrange multiplier test are asymptotically equivalent. Although they are asymptotically equivalent, in finite samples, they could disagree enough to lead to different conclusions.
+
+
+## Student's t test
+
+
+## Wald test 
+
++ Has an asymptotic $\chi^2$-distribution under the null hypothesis. 
+
++ Is used to determine ‘significant’ variables from the set of predictors.
+
++ Test statistic for assessing D-dimensional $\boldsymbol{\beta}$:
+
+$$
+W = (\hat{\boldsymbol{\beta}} - \boldsymbol{\beta}_0)^T (\text{Var}(\hat{\boldsymbol{\beta}}))^{-1} (\hat{\boldsymbol{\beta}} - \boldsymbol{\beta}_0) \sim \chi^2_{(D)} \text{ under }H_0,
+$$
+where $\hat{\boldsymbol{\beta}}$ is the maximum likelihood estimate. 
+
+
++ Test statistic for assessing univariate $\beta$:
+
+$$
+W = \frac{(\hat{\beta} - \beta_0)^2}{\text{Var}(\hat{\beta})} \sim \chi^2_{(1)} \text{ under }H_0. 
+$$
+
+
+
+## Chi-squared test
+
+
+## ANOVA
+
+
+
+## Likelihood-ratio test
+
+
+
+
